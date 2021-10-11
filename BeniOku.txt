@@ -1,0 +1,39 @@
+---------------------------------------------------------------------------------
+http://localhost:3000 => 
+
+Bu adreste bütün Sınıf modelindeki nesneler ve özellikleri dönüyor sayfanın sol tarafında bütün Obje sınıfları için
+
+---------------------------------------------------------------------------------
+
+http://localhost:3000/login =>
+
+Bu adreste kullanıcı girişi için,ana görevi yeni bir kullanıcı oluşturmak için ve yeni bir metot eklemek için kullanıcıları yönetmek,Örneğin yeni bir metot eklemek için giriş yapmak gerekiyor,Yeni bir kullanıcı eklemek için ise hem giriş yapmak hemde superuser olmak gerekiyor sadece bu iki kısımda kullanılıyor.
+
+Burada hem post hem get metotları kullanılıyor.
+
+---------------------------------------------------------------------------------
+
+http://localhost:3000/sinif/(sınıf_adı) =>
+
+Bu kısım root kısmında gönderilen json nesnesinden link ile bağlanan bir sınıf. Örneğin root kısmında kullanıcı Array kısmına tıkladı(root kısmında döndürülen json link olarak sunulucak) bu sayede http://localhost:3000/sinif/Array olarak aratılacak ve bu kısım Sınıfı Array olan bütün nesneleri döndürüyor.
+
+---------------------------------------------------------------------------------
+
+http://localhost:3000/loyout => 
+
+Kullanıcı çerezlerini siliyor.
+
+---------------------------------------------------------------------------------
+
+http://localhost:3000/metot/new =>
+
+Bu kısım yeni bir metot oluşturmak için kullanılacak.Ancak yeni bir metot sayfasını render etmeden önce http://localhost:3000/login sayfası kontrol edilmeli eğer kullanıcı giriş yapmışsa kullanıcıların bilgileri geri dönüyor yapmamışsa değer dönmüyor.
+
+post metotu için http://localhost:3000/metot kısmı kullanılacak.
+
+---------------------------------------------------------------------------------
+
+yeni bir kullanıcı kısmı olşturma kısmı şimdilik hazır değil ama login kısmı hariç tümü işlevli çalışıyor sadece yapılması gereken login kısmı ve metot,kullanıcı ekleme.
+
+Kolay gelsin :)
+

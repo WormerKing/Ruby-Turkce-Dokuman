@@ -11,6 +11,8 @@ class SessionController < ApplicationController
 
 		unless @user.nil?
 			cookies[:user_id] = {value:@user.id,expire:1.hour.from_now}
+		else
+			flash[:warning] = "Giriş hatası !"
 		end
 		redirect_to login_path
 	end
