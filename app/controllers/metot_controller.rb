@@ -28,4 +28,7 @@ class MetotController < ApplicationController
 			render json:{message:"Sınıf bulunamadı !"}
 		end
 	end
+	def find_metot
+		render json:Metot.find_by_name(params[:metotname])
+	end
 end
